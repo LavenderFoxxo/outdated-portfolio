@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander's Portfolio</title>
+    <link rel="icon" type="image/png" href="/static/img/main.png">
+    <link rel="shortcut icon" type="image/png" href="/static/img/main.png">
+    <link href="/static/css/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
+  </head>
+  <style>
+    span {
+      color: #844b92
+    }
+  </style>
+  <!-- Navbar -->
+  <body style="background-color: #222222">
+    <nav
+      class="bg-black border-grey-200 px-2 sm:px-4 py-2.5 rounded"
+      style="background-color: #111111"
+    >
+      <div
+        class="container flex flex-wrap items-center mx-auto justify-between"
+      >
+        <a href="#" class="flex items-center">
+          <img src="https://i.imgur.com/KgtGITK.png" class="h-6 mr-3 sm:h-9" />
+          <span
+            class="self-center text-xl font-bold whitespace-nowrap text-white"
+            >Alexander Hyman</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar">
+          <ul
+            class="flex flex-col p-4 mt-4 md:border-0 md:bg-grey-300 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium dark:bg-gray-800 md:dark:bg-gray-200"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="examples"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Examples</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <div class="hero" style="background-image: url('/static/img/header2.png')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md" style="padding: 60px">
+          <h1 class="mb-5 text-5xl text-white font-semibold">
+            Hi, I'm <span>Alexander</span>.
+          </h1>
+          <p class="text-white text-center">
+            I am a full-stack developer from Canada living in the U.S
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <a id="about">
+      <div class="flex flex-wrap justify-center">
+        <div class="hero">
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md mt-8">
+              <h1 class="text-5xl text-white font-semibold">About Me</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="https://cdn.discordapp.com/attachments/1038770096925048832/1057856831814369381/IMG_2130.jpg"
+            style="height: 250px"
+            class="max-w-sm rounded-lg"
+          />
+          <div class="text-white">
+            <p class="py-2 text-center mr-170 lg:mr-0" style="max-width: 500px;">
+              I'm just your run of the mill teenager. I game quite a bit in my
+              free-time, or I code. I enjoy simulation games like ETS2 and ATS,
+              along with other competitive games such as Rocket League. I had
+              originally got into the development world back in April of 2018
+              where I coded my first discord bot in Discord.JS and from there, I
+              learned some other languages out of interest, and that eventually
+              lead me to where I am currently! Below you'll find some of the projects I'm actively working on &
+              some of my past work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <br>
+    <!-- <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700"> -->
+    <!-- Projects -->
+
+    <!-- <a id="clients">
+      <div class="flex flex-wrap justify-center">
+        <div class="hero">
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md mt-3 mb-8">
+              <h1 class="text-5xl text-white font-semibold">Clients</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <a href="https://highspeedtrucking.ca">
+          <div class="card w-72 shadow-xl mr-2" style="background-color: #111111">
+            <figure class="px-10 pt-10">
+              <img src="https://i.imgur.com/X7uGot3.png" alt="HST Logo" style="width: 128px" class="p-2 rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">HighSpeed Trucking</h2>
+            </div>
+          </div>
+        </a>
+        <a href="https://orbitnode.net">  
+          <div class="card w-72 shadow-xl lg:mr-2 max-sm:mt-2" style="background-color: #111111">
+            <figure class="px-10 pt-10">
+              <img src="https://i.imgur.com/bav2HvD.png" alt="OrbitNode Logo" style="width: 128px" class="p-2 rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-white">OrbitNode</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </a> -->
+
+    <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+
+    <!-- Projects -->
+
+    <a id="projects">
+      <div class="flex flex-wrap justify-center">
+        <div class="hero">
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md mt-3 mb-8">
+              <h1 class="text-5xl text-white font-semibold">Projects</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center" style="gap: 2.5rem">
+        <a href="https://weareharmony.net">
+          <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1052746819899240468/puepw_2.png" class="contain" alt="Harmony Logo" style="object-fit:cover;max-height:225px;max-width:400px;" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Harmony</h2>
+              <p class="text-white">A online radio station featuring a variety of music & a wonderful team.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://freightwayvtc.com">
+          <div class="card w-96 shadow-xl image-full">
+            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png" alt="Freightway" style="object-fit:cover;max-height:225px;max-width:400px;" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Freightway</h2>
+              <p class="text-white">Their main goal with the community and company is to help people find their virtual home without dealing with annoying rules.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://fsphotos.cc">
+          <div class="card w-96 shadow-xl image-full">
+            <figure><img src="https://i.imgur.com/HDXfnXJ.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">FSPhotos</h2>
+              <p class="text-white">FSPhotos is a new platform similar to JetPhotos but for the flight simulator community.</p>
+            </div>
+          </div>
+        </a>
+         <a href="https://colxr.net">
+          <div class="card w-96 shadow-xl image-full">
+            <figure><img src="https://i.imgur.com/wxRxfdP.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">ColXr</h2>
+              <p class="text-white">ColXr was founded in the Summer of 2020 with the idea of building a community for Freelancers, such as Graphic Designers, Developers, Modders, and others, to be found easier by the community.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://radiowiki.net">
+          <div class="card w-96 shadow-xl image-full">
+            <figure><img src="https://i.imgur.com/px0EOAU.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">RadioWiki</h2>
+              <p class="text-white">Welcome to RadioWiki, a site to learn more about and discover your favourite radio stations, from big to small!</p>
+            </div>
+          </div>
+        </a> 
+      </div>
+    </a>
+
+    <!-- Footer -->
+    <br />
+    <br>
+    <footer
+      class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 flex flex-wrap"
+      style="background-color: #111111"
+    >
+      <span class="text-sm text-white sm:text-center dark:text-white"
+        >© 2022 Alexander Hyman - Logo by <a href="https://portfolio.embercx.com">EmberCX</a></span
+      >
+      <ul class="flex flex-wrap items-center mt-3 text-sm text-white sm:mt-0">
+        <li>
+          <a href="/" class="mr-4 hover:underline md:mr-6 md:ml-2">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="mr-4 hover:underline md:mr-6 md:ml-2">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="mr-4 hover:underline md:mr-6">Projects</a>
+        </li>
+        <li>
+          <a href="examples" class="mr-4 hover:underline md:mr-6">Examples</a>
+        </li>
+        <li>
+          <a href="contact" class="mr-4 hover:underline md:mr-6">Contact</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
