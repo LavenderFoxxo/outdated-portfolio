@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander's Portfolio</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/img/site.webmanifest" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="description" content="Alexander Hyman's Portfolio" />
+    <link href="/static/css/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
+  </head>
+  <style>
+    span {
+      color: #844b92;
+    }
+  </style>
+  <!-- Navbar -->
+  <body style="background-color: #222222">
+    <nav
+      class="bg-black border-grey-200 px-2 sm:px-4 py-2.5 rounded"
+      style="background-color: #111111"
+    >
+      <div
+        class="container flex flex-wrap items-center mx-auto justify-between"
+      >
+        <a href="/" class="flex items-center">
+          <img src="https://i.imgur.com/KgtGITK.png" class="h-6 mr-3 sm:h-9" />
+          <span
+            class="self-center text-xl font-bold whitespace-nowrap text-white"
+            >Alexander Hyman</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar">
+          <ul
+            class="flex flex-col p-4 mt-4 md:border-0 md:bg-grey-300 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium dark:bg-gray-800 md:dark:bg-gray-200"
+          >
+            <li>
+              <a
+                href="/"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/#about"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="/#projects"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="examples"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                aria-current="page"
+                >Examples</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact"
+                class="block py-2 pl-3 pr-4 text-white rounded md:bg-grey-50 md:p-0 dark:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header  -->
+
+    <div class="hero">
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 mt-8 text-4xl font-white font-semibold text-white">
+            Thanks
+          </h1>
+          <p class="mb-5 text-1xl text-white">
+            I'd like to give a huge thanks to the following people.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 flex flex-wrap"
+      style="background-color: #111111"
+    >
+      <span class="text-sm text-white sm:text-center dark:text-white"
+        >© 2022 Alexander Hyman</span
+      >
+      <ul class="flex flex-wrap items-center mt-3 text-sm text-white sm:mt-0">
+        <li>
+          <a href="/" class="mr-4 hover:underline md:mr-6 md:ml-2">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="mr-4 hover:underline md:mr-6 md:ml-2"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="mr-4 hover:underline md:mr-6">Projects</a>
+        </li>
+        <li>
+          <a href="examples" class="mr-4 hover:underline md:mr-6">Examples</a>
+        </li>
+        <li>
+          <a href="contact" class="mr-4 hover:underline md:mr-6">Contact</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
