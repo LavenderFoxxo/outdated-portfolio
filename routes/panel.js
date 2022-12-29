@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { Webhook, MessageBuilder } = require("discord-webhook-node");
 const bodyParser = require("body-parser");
+require('dotenv').config()
 
 router.use(bodyParser.json());
 
@@ -26,7 +27,7 @@ router.post("/contact", async (req, res) => {
       .setColor("#2f3136");
 
     const hook = new Webhook(
-      "https://discord.com/api/webhooks/1058003830559748096/I0Tu-x6NvcO7r_2sRzb01VPaCHG_-D-7ZLn5temNn41BLSvYPAAdGm0qJQa0yE4V04W6"
+      process.env.CONTACTHOOK
     );
 
     hook.setUsername("New Contact Submission");
