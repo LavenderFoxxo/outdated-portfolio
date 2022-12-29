@@ -17,6 +17,10 @@ router.get("/examples", async (req, res) => {
   res.render("examples.ejs");
 });
 
+router.get('/thanks', async (req, res) => {
+    res.render('thanks.ejs')
+})
+
 router.post("/contact", async (req, res) => {
   try {
     const embed = new MessageBuilder()
