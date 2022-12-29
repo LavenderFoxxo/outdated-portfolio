@@ -14,6 +14,6 @@ app.use('/static', express.static(path.join(__dirname, 'static')))
 app.use('/', Main)
 
 /* Starting the app */
-app.listen(${port}, () => {
+app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)
 })
