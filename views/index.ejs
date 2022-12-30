@@ -137,10 +137,10 @@
 
     <!-- Header -->
 
-    <div class="hero" style="background-image: url('/static/img/header2.png')">
+    <div class="hero flex-col md:flex-row" style="background-image: url('/static/img/header2.png')">
       <div class="hero-overlay"></div>
-      <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md" style="padding: 85px">
+      <div class="hero-content text-center text-neutral-content flex-col md:flex-row">
+        <div class="max-w-md p-8">
           <h1 class="mb-5 text-5xl text-white font-semibold">
             Hi, I'm <span>Alexander.</span>
           </h1>
@@ -336,8 +336,8 @@
     <br />
     <br />
     <footer
-      class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 flex flex-wrap"
-      style="background-color: #111111"
+      class="sticky top-[100vh] p-4 w-full shadow md:flex md:items-center md:justify-between md:p-6"
+      style="background-color: #111111;"
     >
       <span class="text-sm text-white sm:text-center dark:text-white"
         >© 2022 Alexander Hyman</span
