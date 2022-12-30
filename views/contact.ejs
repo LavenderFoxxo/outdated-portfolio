@@ -40,6 +40,10 @@
       type="text/css"
     />
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-display"
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
   </head>
   <style>
@@ -49,6 +53,9 @@
   </style>
   <!-- Navbar -->
   <body style="background-color: #222222">
+    <div id="loading">
+      <img id="loading-image" src="" alt="Loading..." />
+    </div>
     <nav
       class="bg-black border-grey-200 px-2 sm:px-4 py-2.5 rounded"
       style="background-color: #111111"
@@ -224,6 +231,11 @@
         </li>
       </ul>
     </footer>
+    <script>
+      $(window).on("load", function () {
+        $("#loading").hide();
+      });
+    </script>
   </body>
   <script>
     $("#submit").click(() => {

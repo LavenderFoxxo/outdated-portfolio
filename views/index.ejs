@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander's Portfolio</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,15 +38,23 @@
       type="text/css"
     />
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-display"
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
   </head>
+ 
   <style>
     span {
-      color: #844b92
+      color: #844b92;
     }
   </style>
   <!-- Navbar -->
   <body style="background-color: #222222">
+    <div id="loading">
+      <img id="loading-image" src="" alt="Loading..." />
+    </div>
     <nav
       class="bg-black border-grey-200 px-2 sm:px-4 py-2.5 rounded"
       style="background-color: #111111"
@@ -128,12 +140,12 @@
     <div class="hero" style="background-image: url('/static/img/header2.png')">
       <div class="hero-overlay"></div>
       <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md" style="padding: 60px">
+        <div class="max-w-md" style="padding: 85px">
           <h1 class="mb-5 text-5xl text-white font-semibold">
-            Hi, I'm <span>Alexander</span>.
+            Hi, I'm <span>Alexander.</span>
           </h1>
           <p class="text-white text-center">
-            I am a full-stack developer from Canada living in the U.S
+            I am a full-stack developer currently living in the U.S.
           </p>
         </div>
       </div>
@@ -159,22 +171,22 @@
             class="max-w-sm rounded-lg"
           />
           <div class="text-white">
-            <p class="py-2 text-center mr-170 lg:mr-0" style="max-width: 500px;">
+            <p class="py-2 text-center mr-170 lg:mr-0" style="max-width: 500px">
               I'm just your run of the mill teenager. I game quite a bit in my
               free-time, or I code. I enjoy simulation games like ETS2 and ATS,
               along with other competitive games such as Rocket League. I had
               originally got into the development world back in April of 2018
               where I coded my first discord bot in Discord.JS and from there, I
               learned some other languages out of interest, and that eventually
-              lead me to where I am currently! Below you'll find some of the projects I'm actively working on &
-              some of my past work.
+              lead me to where I am currently! Below you'll find some of the
+              projects I'm actively working on & some of my past work.
             </p>
           </div>
         </div>
       </div>
     </a>
 
-    <br>
+    <br />
     <!-- <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700"> -->
     <!-- Projects -->
 
@@ -212,7 +224,9 @@
       </div>
     </a> -->
 
-    <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+    <hr
+      class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700"
+    />
 
     <!-- Projects -->
 
@@ -229,55 +243,98 @@
       <div class="flex flex-wrap justify-center" style="gap: 2.5rem">
         <a href="https://weareharmony.net">
           <div class="card w-96 bg-base-100 shadow-xl image-full">
-            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1052746819899240468/puepw_2.png" class="contain" alt="Harmony Logo" style="object-fit:cover;max-height:225px;max-width:400px;" /></figure>
+            <figure>
+              <img
+                src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+                class="contain"
+                alt="Harmony Logo"
+                style="object-fit: cover; max-height: 225px; max-width: 400px"
+              />
+            </figure>
             <div class="card-body">
-              <h2 class="card-title text-white">Harmony</h2>
-              <p class="text-white">A online radio station featuring a variety of music & a wonderful team.</p>
+              <h2 class="card-title text-white">
+                Harmony
+                <div class="badge badge-primary">Developer</div>
+              </h2>
+              <p class="text-white">
+                A online radio station featuring a variety of music & a
+                wonderful team.
+              </p>
             </div>
           </div>
         </a>
         <a href="https://freightwayvtc.com">
           <div class="card w-96 shadow-xl image-full">
-            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png" alt="Freightway" style="object-fit:cover;max-height:225px;max-width:400px;" /></figure>
+            <figure>
+              <img
+                src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+                alt="Freightway"
+                style="object-fit: cover; max-height: 225px; max-width: 400px"
+              />
+            </figure>
             <div class="card-body">
-              <h2 class="card-title text-white">Freightway</h2>
-              <p class="text-white">Their main goal with the community and company is to help people find their virtual home without dealing with annoying rules.</p>
+              <h2 class="card-title text-white">
+                Freightway
+                <div class="badge badge-primary">Development Manager</div>
+              </h2>
+              <p class="text-white">
+                Their main goal with the community and company is to help people
+                find their virtual home without dealing with annoying rules.
+              </p>
             </div>
           </div>
         </a>
         <a href="https://fsphotos.cc">
           <div class="card w-96 shadow-xl image-full">
-            <figure><img src="https://i.imgur.com/HDXfnXJ.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <figure>
+              <img
+                src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+                alt="FSPhotos"
+                style="
+                  object-fit: cover;
+                  max-height: 225px;
+                  max-width: 400px;
+                  width: 400px;
+                  height: 225px;
+                "
+              />
+            </figure>
             <div class="card-body">
-              <h2 class="card-title text-white">FSPhotos</h2>
-              <p class="text-white">FSPhotos is a new platform similar to JetPhotos but for the flight simulator community.</p>
+              <h2 class="card-title text-white">
+                FSPhotos
+                <div class="badge badge-primary">Developer</div>
+              </h2>
+              <p class="text-white">
+                FSPhotos is a new platform similar to JetPhotos but for the
+                flight simulator community.
+              </p>
             </div>
           </div>
         </a>
-         <a href="https://colxr.net">
+        <!-- <a href="https://colxr.net">
           <div class="card w-96 shadow-xl image-full">
-            <figure><img src="https://i.imgur.com/wxRxfdP.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
             <div class="card-body">
-              <h2 class="card-title text-white">ColXr</h2>
+              <h2 class="card-title text-white">ColXr <div class="badge badge-primary">Developer</div></h2>
               <p class="text-white">ColXr was founded in the Summer of 2020 with the idea of building a community for Freelancers, such as Graphic Designers, Developers, Modders, and others, to be found easier by the community.</p>
             </div>
           </div>
-        </a>
-        <a href="https://radiowiki.net">
+        </a>  -->
+        <!-- <a href="https://radiowiki.net">
           <div class="card w-96 shadow-xl image-full">
-            <figure><img src="https://i.imgur.com/px0EOAU.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
+            <figure><img src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png" alt="FSPhotos" style="object-fit:cover;max-height:225px;max-width:400px;width:400px;height:225px;" /></figure>
             <div class="card-body">
               <h2 class="card-title text-white">RadioWiki</h2>
               <p class="text-white">Welcome to RadioWiki, a site to learn more about and discover your favourite radio stations, from big to small!</p>
             </div>
           </div>
-        </a> 
+        </a>  -->
       </div>
     </a>
 
     <!-- Footer -->
     <br />
-    <br>
+    <br />
     <footer
       class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 flex flex-wrap"
       style="background-color: #111111"
@@ -290,7 +347,9 @@
           <a href="/" class="mr-4 hover:underline md:mr-6 md:ml-2">Home</a>
         </li>
         <li>
-          <a href="#about" class="mr-4 hover:underline md:mr-6 md:ml-2">About</a>
+          <a href="#about" class="mr-4 hover:underline md:mr-6 md:ml-2"
+            >About</a
+          >
         </li>
         <li>
           <a href="#projects" class="mr-4 hover:underline md:mr-6">Projects</a>
@@ -303,5 +362,13 @@
         </li>
       </ul>
     </footer>
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide();
+      }) 
+    </script>
+    
   </body>
+  
+  
 </html>

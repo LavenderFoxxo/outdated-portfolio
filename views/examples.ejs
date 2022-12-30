@@ -49,6 +49,9 @@
   </style>
   <!-- Navbar -->
   <body style="background-color: #222222">
+    <div id="loading">
+      <img id="loading-image" src="" alt="Loading..." />
+    </div>
     <nav
       class="bg-black border-grey-200 px-2 sm:px-4 py-2.5 rounded"
       style="background-color: #111111"
@@ -132,25 +135,152 @@
     <!-- Header  -->
 
     <div class="hero">
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 mt-8 text-4xl font-white font-semibold text-white">
-              Examples
-            </h1>
-            <p class="mb-5 text-1xl text-white">
-              Below you'll find some examples of my past work & testimonitals.
-            </p>
-          </div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 mt-8 text-4xl font-white font-semibold text-white">
+            Examples
+          </h1>
+          <p class="mb-5 text-1xl text-white">
+            Below you'll find some examples of my past work & testimonitals.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="flex flex-wrap justify-center mb-5" style="gap: 2.5rem">
-        <img src="https://i.imgur.com/EuakNlI.png" style="width: 500px;border-radius: 15px">
-        <img src="https://i.imgur.com/cRjQyTT.png" style="width: 500px;border-radius: 15px">
-        <img src="https://i.imgur.com/2HqyG5N.png" style="width: 500px;border-radius: 15px">
+      <img
+        src="https://i.imgur.com/EuakNlI.png"
+        style="width: 500px; border-radius: 15px"
+      />
+      <img
+        src="https://i.imgur.com/cRjQyTT.png"
+        style="width: 500px; border-radius: 15px"
+      />
+      <img
+        src="https://i.imgur.com/2HqyG5N.png"
+        style="width: 500px; border-radius: 15px"
+      />
     </div>
 
-    
+    <div class="hero">
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 mt-8 text-4xl font-white font-semibold text-white">
+            Clients
+          </h1>
+          <p class="mb-5 text-1xl text-white">
+            This is a list of my current and past clients.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center" style="gap: 2.5rem">
+      <a href="https://orbitnode.net">
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure>
+            <img
+              src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+              class="contain"
+              alt="Harmony Logo"
+              style="object-fit: cover; max-height: 225px; max-width: 400px"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-white">OrbitNode</h2>
+            <p class="text-white">
+              I created their main website back in August in 2022. From there
+              another developer took on the work and made it the site it is now.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://highspeedtrucking.ca">
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure>
+            <img
+              src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+              class="contain"
+              alt="Harmony Logo"
+              style="object-fit: cover; max-height: 225px; max-width: 400px"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-white">HighSpeed Trucking</h2>
+            <p class="text-white">
+              I initally created their website while learning a Tailwind UI
+              Components Library, and I was pleased with the results. Their
+              website is live for you to go check it out.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://colxr.net">
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure>
+            <img
+              src="https://cdn.discordapp.com/attachments/881911601479950356/1057843711976931358/FWBlue.png"
+              class="contain"
+              alt="Harmony Logo"
+              style="object-fit: cover; max-height: 225px; max-width: 400px"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-white">ColXr</h2>
+            <p class="text-white">
+              I created their ticketing system, which features the basic
+              functions of Ticket Tool, a popular discord ticket bot.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="hero">
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 mt-8 text-4xl font-white font-semibold text-white">
+            Testimonitals
+          </h1>
+          <p class="mb-5 text-1xl text-white">
+            Below you'll be able to see feedback provided in regards to my work.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center mb-8" style="gap: 2.5rem">
+      <div
+        class="flex card w-96"
+        style="background-color: #131f32; height: 215px"
+      >
+        <div class="card-body">
+          <blockquote class="italic text-white dark:text-white">
+            <p class="mb-2">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
+              porttitor massa id neque aliquam vestibulum morbi."
+            </p>
+            <p>- Person, Company</p>
+          </blockquote>
+        </div>
+      </div>
+      <div
+        class="flex card w-96"
+        style="background-color: #131f32; height: 215px"
+      >
+        <div class="card-body">
+          <blockquote class="italic text-white dark:text-white">
+            <p class="mb-2">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
+              porttitor massa id neque aliquam vestibulum morbi."
+            </p>
+            <p>- Person, Company</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
 
     <footer
       class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 flex flex-wrap"
@@ -179,5 +309,10 @@
         </li>
       </ul>
     </footer>
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide();
+      }) 
+    </script>
   </body>
 </html>

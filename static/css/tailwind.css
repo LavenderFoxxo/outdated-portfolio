@@ -60,6 +60,7 @@ body {
   line-height: inherit;
   /* 2 */
   font-family: 'DM Sans', sans-serif;
+
 }
 
 /*
@@ -3985,4 +3986,22 @@ html {
 .dark .dark\:hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #000;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
 }
