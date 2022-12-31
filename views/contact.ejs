@@ -9,19 +9,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itsalexander.dev/" />
     <meta name="theme-color" content="#111111" />
-    <meta
-      name="description"
-      content="Alexander Hyman — Canadian Developer."
-    />
+    <meta name="description" content="Alexander Hyman — Canadian Developer." />
     <meta
       property="og:description"
       content="Alexander Hyman — Canadian Developer."
     />
     <meta property="twitter:url" content="https://itsalexander.dev" />
-    <meta
-      name="description"
-      content="Alexander Hyman — Canadian Developer."
-    />
+    <meta name="description" content="Alexander Hyman — Canadian Developer." />
     <meta
       property="twitter:description"
       content="Alexander Hyman — Canadian Developer."
@@ -54,6 +48,7 @@
     />
     <link rel="manifest" href="/static/img/site.webmanifest" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <meta name="description" content="Alexander Hyman's Portfolio" />
     <link href="/static/css/tailwind.css" rel="stylesheet" />
     <link
@@ -233,9 +228,9 @@
               style="background-color: #222222"
             ></textarea>
           </div>
-          <div class="card-actions">
+          <div id="submit" class="card-actions">
             <button
-              id="submit"
+              id="submit-button"
               class="btn btn-block text-white"
               style="background-color: #333333"
             >
@@ -248,7 +243,7 @@
 
     <footer
       class="sticky top-[100vh] p-4 shadow md:flex md:items-center sm:justify-between md:justify-between md:p-6 flex flex-wrap"
-      style="background-color: #111111;"
+      style="background-color: #111111"
     >
       <span class="text-sm text-white sm:text-center dark:text-white"
         >© 2022 Alexander Hyman</span
@@ -273,60 +268,7 @@
         </li>
       </ul>
     </footer>
-    <script>
-      $(window).on("load", function () {
-        $("#loading").hide();
-      });
-    </script>
+    <script src="/static/js/contact.js" type="text/javascript"></script>
+    <script src="/static/js/preloader.js" type="text/javascript"></script>
   </body>
-  <script>
-    $("#submit").click(() => {
-      const name = $("#name").val();
-      const email = $("#email").val();
-      const message = $("#message").val();
-
-      if (name == "" || email == "" || message == "") {
-        Swal.fire({
-          title: "Error!",
-          text: "Please fill out all fields!",
-          icon: "error",
-          background: "#333333",
-        });
-        return;
-      }
-
-      var data = {
-        name: `${name}`,
-        email: `${email}`,
-        message: `${message}`,
-      };
-
-      $.ajax({
-        contentType: "application/json",
-        data: JSON.stringify(data),
-        type: "POST",
-        url: "/contact",
-      })
-        .done(() => {
-          Swal.fire({
-            title: "Success!",
-            text: "Your message was sent!",
-            icon: "success",
-            background: "#333333",
-          });
-
-          $("#name").val("");
-          $("#email").val("");
-          $("#message").val("");
-        })
-        .fail(() => {
-          Swal.fire({
-            title: "Error!",
-            text: "We were unable to send your message. Try again later!",
-            icon: "error",
-            background: "#242933",
-          });
-        });
-    });
-  </script>
 </html>
